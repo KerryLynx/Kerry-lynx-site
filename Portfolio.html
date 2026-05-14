@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<img src="assets/img/business.jpg" alt="Business Website">
+
+  <title>Portfolio | Kerry Lynx Studio</title>
+
+  <meta name="description" content="Explore premium web design, branding, and creative projects by Kerry Lynx Studio.">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">Kerry Lynx</div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+  
+  <nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="booking.html">Booking</a>
+  <a href="admin.html">Admin</a>
+</nav>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="section" data-aos="fade-up">
+  <h2>Selected Work</h2>
+  <p class="muted">
+    A showcase of premium digital systems, branding concepts, and high-conversion designs.
+  </p>
+</section>
+
+
+<!-- FILTER BAR (VISUAL STYLE) -->
+<section class="section">
+  <div class="filter-bar">
+    <button class="btn filter-btn active">All Projects</button>
+    <button class="btn filter-btn">Web Design</button>
+    <button class="btn filter-btn">Brand Identity</button>
+    <button class="btn filter-btn">Landing Systems</button>
+  </div>
+</section>
+
+
+<!-- PROJECT GRID -->
+<section class="section" data-aos="fade-up">
+
+  <div class="grid">
+
+    <!-- Business Website -->
+    <div class="card project-card" data-service="Business Website">
+      <div class="project-image">
+        <img src="assets/img/business-website.jpg" alt="Business Website Project">
+        <div class="project-overlay">
+          <h3>Business Website</h3>
+          <p>Modern corporate website system</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Branding -->
+   <div class="card project-card" data-service="Food Branding">
+      <div class="project-image">
+        <img src="assets/img/food-services.jpg" alt="Food Branding Project">
+        <div class="project-overlay">
+          <h3>Food Branding</h3>
+          <p>Luxury identity for food businesses</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Page System -->
+    <div class="card project-card" data-service="Landing Page System">
+      <div class="project-image">
+        <img src="assets/img/landing-page.jpg" alt="Landing Page System">
+        <div class="project-overlay">
+          <h3>Landing Page System</h3>
+          <p>High-conversion marketing design</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CALL TO ACTION -->
+<section class="section cta" data-aos="zoom-in">
+  <h2>Let’s Build Your Next Project</h2>
+  <p>We design modern, premium systems that convert and impress.</p>
+  <a href="booking.html" class="btn">Start a Project</a>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2026 Kerry Lynx Studio & Kitchen
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 900,
+    once: true
+  });
+</script>
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="projectModal">
+  <div class="modal-content">
+
+    <span class="close" id="closeModal">&times;</span>
+
+    <img id="modalImg" src="" alt="Project Image">
+
+    <h3 id="modalTitle">Project Title</h3>
+    <p id="modalDesc">Project description</p>
+
+    <button id="orderBtn" class="btn">Order Similar</button>
+
+  </div>
+</div>

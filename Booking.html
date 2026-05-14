@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book a Project | Kerry Lynx Studio</title>
+
+  <meta name="description" content="Book a premium website, branding, or kitchen service with Kerry Lynx Studio & Kitchen.">
+  <meta name="keywords" content="booking, web design, branding, portfolio, food services">
+  <meta name="author" content="Kerry Lynx">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">Kerry Lynx</div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="booking.html">Booking</a>
+  </nav>
+  
+  <nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="booking.html">Booking</a>
+  <a href="admin.html">Admin</a>
+</nav>
+</header>
+
+
+<!-- HERO / INTRO -->
+<section class="section" data-aos="fade-up">
+  <h2>Book a Premium Project</h2>
+  <p class="muted">
+    Tell us what you need. We respond with a custom proposal within 24–48 hours.
+  </p>
+</section>
+
+
+<!-- BOOKING FORM -->
+<section class="section" data-aos="fade-up">
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form booking-form">
+
+    <!-- NAME -->
+    <input type="text" name="name" placeholder="Your Full Name" required>
+
+    <!-- EMAIL -->
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <!-- SERVICE TYPE -->
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option value="website">Website Design</option>
+      <option value="branding">Brand Identity</option>
+      <option value="portfolio">Portfolio Setup</option>
+      <option value="kitchen">Kitchen / Food Service</option>
+    </select>
+
+    <!-- BUDGET -->
+    <select name="budget" required>
+      <option value="">Your Budget Range</option>
+      <option value="low">$50 - $150</option>
+      <option value="medium">$150 - $500</option>
+      <option value="high">$500 - $2000+</option>
+    </select>
+
+    <!-- MESSAGE -->
+    <textarea name="message" rows="6" placeholder="Describe your project in detail..." required></textarea>
+
+    <!-- SUBMIT -->
+    <button type="submit" class="btn">Send Booking Request</button>
+
+  </form>
+  <section class="section" data-aos="fade-up">
+<form action="https://formspree.io/f/mojrzyyp" method="POST" class="form booking-form">
+  
+ <input type="hidden" name="_subject" value="New Booking Received">
+<input type="hidden" name="_replyto" value="{{email}}">
+  
+  <input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="hidden" name="plan" id="plan-field">
+
+<input type="hidden" name="date" id="date-field">
+
+<input type="hidden" name="time" id="time-field">
+
+  <h2>Select a Date</h2>
+  <p class="muted">Choose your preferred project start date</p>
+
+  <div class="calendar-box">
+
+    <input type="date" class="calendar-input" name="date" required>
+    
+   <section class="section" data-aos="fade-up">
+
+  <h2>Select Time Slot</h2>
+  <p class="muted">Choose when we should start your project discussion</p>
+
+  <div class="time-grid">
+
+    <label class="time-card">
+      <input type="radio" name="time" value="Morning" required>
+      <span>🌅 Morning</span>
+      <small>9:00 AM - 12:00 PM</small>
+    </label>
+
+    <label class="time-card">
+      <input type="radio" name="time" value="Afternoon">
+      <span>☀️ Afternoon</span>
+      <small>12:00 PM - 4:00 PM</small>
+    </label>
+
+    <label class="time-card">
+      <input type="radio" name="time" value="Evening">
+      <span>🌙 Evening</span>
+      <small>4:00 PM - 8:00 PM</small>
+    </label>
+
+  </div>
+
+</section>
+
+  </div>
+
+</section>
+
+
+<!-- TRUST SECTION -->
+<section class="section" data-aos="fade-up">
+  <h3>Why Work With Us?</h3>
+
+  <div class="grid">
+
+    <div class="card">
+      <h4>Fast Delivery</h4>
+      <p>We deliver projects quickly without losing quality.</p>
+    </div>
+
+    <div class="card">
+      <h4>Premium Quality</h4>
+      <p>Modern, luxury-level design system built for conversion.</p>
+    </div>
+
+    <div class="card">
+      <h4>Direct Communication</h4>
+      <p>You deal directly with the creator — no middle agents.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2026 Kerry Lynx Studio & Kitchen
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 900,
+    once: true
+  });
+</script>
+
+</body>
+</html>
